@@ -11,7 +11,37 @@
 		E84FDC3B2E0F76D800888C75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FDC3A2E0F76D800888C75 /* ContentView.swift */; };
 		E84FDC3D2E0F76DA00888C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84FDC3C2E0F76DA00888C75 /* Assets.xcassets */; };
 		E84FDC402E0F76DA00888C75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84FDC3F2E0F76DA00888C75 /* Preview Assets.xcassets */; };
+		E84FDC4D2E0F76FE00888C75 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84FDC4C2E0F76FE00888C75 /* WidgetKit.framework */; };
+		E84FDC4F2E0F76FE00888C75 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84FDC4E2E0F76FE00888C75 /* SwiftUI.framework */; };
+		E84FDC522E0F76FF00888C75 /* FunFactWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FDC512E0F76FF00888C75 /* FunFactWidgetBundle.swift */; };
+		E84FDC542E0F76FF00888C75 /* FunFactWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FDC532E0F76FF00888C75 /* FunFactWidget.swift */; };
+		E84FDC562E0F770800888C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84FDC552E0F770800888C75 /* Assets.xcassets */; };
+		E84FDC5A2E0F770800888C75 /* FunFactWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E84FDC4A2E0F76FE00888C75 /* FunFactWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E84FDC582E0F770800888C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E84FDC2D2E0F76D800888C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E84FDC492E0F76FE00888C75;
+			remoteInfo = FunFactWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E84FDC5E2E0F770800888C75 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E84FDC5A2E0F770800888C75 /* FunFactWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E84FDC352E0F76D800888C75 /* FunFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +49,13 @@
 		E84FDC3A2E0F76D800888C75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E84FDC3C2E0F76DA00888C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E84FDC3F2E0F76DA00888C75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E84FDC4A2E0F76FE00888C75 /* FunFactWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FunFactWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84FDC4C2E0F76FE00888C75 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E84FDC4E2E0F76FE00888C75 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E84FDC512E0F76FF00888C75 /* FunFactWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactWidgetBundle.swift; sourceTree = "<group>"; };
+		E84FDC532E0F76FF00888C75 /* FunFactWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactWidget.swift; sourceTree = "<group>"; };
+		E84FDC552E0F770800888C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E84FDC572E0F770800888C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E84FDC472E0F76FE00888C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84FDC4F2E0F76FE00888C75 /* SwiftUI.framework in Frameworks */,
+				E84FDC4D2E0F76FE00888C75 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				E84FDC372E0F76D800888C75 /* FunFact */,
+				E84FDC502E0F76FF00888C75 /* FunFactWidget */,
+				E84FDC4B2E0F76FE00888C75 /* Frameworks */,
 				E84FDC362E0F76D800888C75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				E84FDC352E0F76D800888C75 /* FunFact.app */,
+				E84FDC4A2E0F76FE00888C75 /* FunFactWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +116,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E84FDC4B2E0F76FE00888C75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E84FDC4C2E0F76FE00888C75 /* WidgetKit.framework */,
+				E84FDC4E2E0F76FE00888C75 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E84FDC502E0F76FF00888C75 /* FunFactWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E84FDC512E0F76FF00888C75 /* FunFactWidgetBundle.swift */,
+				E84FDC532E0F76FF00888C75 /* FunFactWidget.swift */,
+				E84FDC552E0F770800888C75 /* Assets.xcassets */,
+				E84FDC572E0F770800888C75 /* Info.plist */,
+			);
+			path = FunFactWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +146,34 @@
 				E84FDC312E0F76D800888C75 /* Sources */,
 				E84FDC322E0F76D800888C75 /* Frameworks */,
 				E84FDC332E0F76D800888C75 /* Resources */,
+				E84FDC5E2E0F770800888C75 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E84FDC592E0F770800888C75 /* PBXTargetDependency */,
 			);
 			name = FunFact;
 			productName = FunFact;
 			productReference = E84FDC352E0F76D800888C75 /* FunFact.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E84FDC492E0F76FE00888C75 /* FunFactWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E84FDC5B2E0F770800888C75 /* Build configuration list for PBXNativeTarget "FunFactWidgetExtension" */;
+			buildPhases = (
+				E84FDC462E0F76FE00888C75 /* Sources */,
+				E84FDC472E0F76FE00888C75 /* Frameworks */,
+				E84FDC482E0F76FE00888C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunFactWidgetExtension;
+			productName = FunFactWidgetExtension;
+			productReference = E84FDC4A2E0F76FE00888C75 /* FunFactWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +186,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					E84FDC342E0F76D800888C75 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E84FDC492E0F76FE00888C75 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				E84FDC342E0F76D800888C75 /* FunFact */,
+				E84FDC492E0F76FE00888C75 /* FunFactWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +219,14 @@
 			files = (
 				E84FDC402E0F76DA00888C75 /* Preview Assets.xcassets in Resources */,
 				E84FDC3D2E0F76DA00888C75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E84FDC482E0F76FE00888C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84FDC562E0F770800888C75 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E84FDC462E0F76FE00888C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84FDC522E0F76FF00888C75 /* FunFactWidgetBundle.swift in Sources */,
+				E84FDC542E0F76FF00888C75 /* FunFactWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E84FDC592E0F770800888C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E84FDC492E0F76FE00888C75 /* FunFactWidgetExtension */;
+			targetProxy = E84FDC582E0F770800888C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E84FDC412E0F76DA00888C75 /* Debug */ = {
@@ -262,6 +379,7 @@
 		E84FDC442E0F76DA00888C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +408,7 @@
 		E84FDC452E0F76DA00888C75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +434,58 @@
 			};
 			name = Release;
 		};
+		E84FDC5C2E0F770800888C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FunFactWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FunFactWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FunFact.FunFactWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E84FDC5D2E0F770800888C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FunFactWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FunFactWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FunFact.FunFactWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +503,15 @@
 			buildConfigurations = (
 				E84FDC442E0F76DA00888C75 /* Debug */,
 				E84FDC452E0F76DA00888C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E84FDC5B2E0F770800888C75 /* Build configuration list for PBXNativeTarget "FunFactWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E84FDC5C2E0F770800888C75 /* Debug */,
+				E84FDC5D2E0F770800888C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
