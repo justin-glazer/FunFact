@@ -19,6 +19,8 @@
 		E82FAA122E124A01006363E0 /* FunFactWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */; };
 		E82FAA132E124A01006363E0 /* FunFactWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */; };
 		E82FAA162E124A01006363E0 /* FunFactWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E82FAA032E1249FE006363E0 /* FunFactWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8CED9072E12530B00BC2847 /* AI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8CED9062E12530B00BC2847 /* AI-Info.plist */; };
+		E8CED9082E12530B00BC2847 /* AI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8CED9062E12530B00BC2847 /* AI-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FunFactWidget.intentdefinition; sourceTree = "<group>"; };
 		E82FAA0F2E124A00006363E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82FAA112E124A01006363E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CED9062E12530B00BC2847 /* AI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AI-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 			children = (
 				E82FAA0A2E1249FE006363E0 /* FunFactWidgetBundle.swift */,
 				E82FAA0C2E1249FE006363E0 /* FunFactWidget.swift */,
+				E8CED9062E12530B00BC2847 /* AI-Info.plist */,
 				E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */,
 				E82FAA0F2E124A00006363E0 /* Assets.xcassets */,
 				E82FAA112E124A01006363E0 /* Info.plist */,
@@ -223,6 +227,7 @@
 			files = (
 				E82FA9F92E1248C5006363E0 /* Preview Assets.xcassets in Resources */,
 				E82FA9F62E1248C5006363E0 /* Assets.xcassets in Resources */,
+				E8CED9072E12530B00BC2847 /* AI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8CED9082E12530B00BC2847 /* AI-Info.plist in Resources */,
 				E82FAA102E124A00006363E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
