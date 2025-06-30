@@ -19,6 +19,9 @@
 		E82FAA122E124A01006363E0 /* FunFactWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */; };
 		E82FAA132E124A01006363E0 /* FunFactWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */; };
 		E82FAA162E124A01006363E0 /* FunFactWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E82FAA032E1249FE006363E0 /* FunFactWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E862721E2E125C2B00C3EE52 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862721D2E125C2B00C3EE52 /* APIKey.swift */; };
+		E862721F2E125C2B00C3EE52 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862721D2E125C2B00C3EE52 /* APIKey.swift */; };
+		E86272222E125E9F00C3EE52 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = E86272212E125E9F00C3EE52 /* GoogleGenerativeAI */; };
 		E8CED90D2E1255CB00BC2847 /* AI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8CED90C2E1255CB00BC2847 /* AI-Info.plist */; };
 		E8CED90E2E1255CB00BC2847 /* AI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8CED90C2E1255CB00BC2847 /* AI-Info.plist */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,7 @@
 		E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = FunFactWidget.intentdefinition; sourceTree = "<group>"; };
 		E82FAA0F2E124A00006363E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82FAA112E124A01006363E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E862721D2E125C2B00C3EE52 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		E8CED90C2E1255CB00BC2847 /* AI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AI-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86272222E125E9F00C3EE52 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +145,7 @@
 				E82FAA0E2E1249FE006363E0 /* FunFactWidget.intentdefinition */,
 				E82FAA0F2E124A00006363E0 /* Assets.xcassets */,
 				E82FAA112E124A01006363E0 /* Info.plist */,
+				E862721D2E125C2B00C3EE52 /* APIKey.swift */,
 			);
 			path = FunFactWidget;
 			sourceTree = "<group>";
@@ -162,6 +168,9 @@
 				E82FAA152E124A01006363E0 /* PBXTargetDependency */,
 			);
 			name = FunFact;
+			packageProductDependencies = (
+				E86272212E125E9F00C3EE52 /* GoogleGenerativeAI */,
+			);
 			productName = FunFact;
 			productReference = E82FA9EE2E1248C3006363E0 /* FunFact.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +219,9 @@
 				Base,
 			);
 			mainGroup = E82FA9E52E1248C3006363E0;
+			packageReferences = (
+				E86272202E125E9F00C3EE52 /* XCRemoteSwiftPackageReference "deprecated-generative-ai-swift" */,
+			);
 			productRefGroup = E82FA9EF2E1248C3006363E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,6 +261,7 @@
 			files = (
 				E82FA9F42E1248C3006363E0 /* ContentView.swift in Sources */,
 				E82FAA132E124A01006363E0 /* FunFactWidget.intentdefinition in Sources */,
+				E862721E2E125C2B00C3EE52 /* APIKey.swift in Sources */,
 				E82FA9F22E1248C3006363E0 /* FunFactApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +272,7 @@
 			files = (
 				E82FAA0B2E1249FE006363E0 /* FunFactWidgetBundle.swift in Sources */,
 				E82FAA122E124A01006363E0 /* FunFactWidget.intentdefinition in Sources */,
+				E862721F2E125C2B00C3EE52 /* APIKey.swift in Sources */,
 				E82FAA0D2E1249FE006363E0 /* FunFactWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +543,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E86272202E125E9F00C3EE52 /* XCRemoteSwiftPackageReference "deprecated-generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/deprecated-generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E86272212E125E9F00C3EE52 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E86272202E125E9F00C3EE52 /* XCRemoteSwiftPackageReference "deprecated-generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E82FA9E62E1248C3006363E0 /* Project object */;
 }
